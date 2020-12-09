@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+
+</head>
+<body>
+
+<script>
+ var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 500,
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 0 },
+                debug: false
+            }
+        },
+        scene: {
+            preload: preload,
+            create: create,
+            update: update
+        }
+    };
+
+console.log("DEBUT");
+
+
+
+
+var game = new Phaser.Game(config);
+var commencer=false;
+var haut;
+var bas;
+var gauche;
+var droite;
+var player;
+var player2;
+function preload ()
+    {
+        console.log("debut cpreload");
+    	this.load.image("star","static/images/star.png");
+    	this.load.image("sky","https://examples.phaser.io/assets/skies/space3.png");
+    	this.load.image("ground","static/images/platform.png");
+
+    	this.load.spritesheet('dude',
+        'static/images/dude.png',
+        { frameWidth: 32, frameHeight: 48 }
+    );
+
+        console.log("fin preload")
+    }
+
+function create ()
+    {
+        console.log("debut crea")
+        this.add.image(400,300,"sky")
+
+//LES COMMANDES UTILISEES
+         haut = this.input.keyboard.addKey("W");
+    bas = this.input.keyboard.addKey("S");
+    gauche = this.input.keyboard.addKey("A");
+    droite = this.input.keyboard.addKey("D");
+    space = this.input.keyboard.addKey("SPACE");
+ //    	game.add.image(400,300,"sky");
+ //       =game.add.image(400, 300, 'star');
+
+         player = this.physics.add.sprite(100, 400, 'dude');
+         player.setBounce(1.05);
+        player2 = this.physics.add.sprite(400, 500, 'ground');
+
+        player.setCollideWorldBounds(true);
+        player2.setCollideWorldBounds(true);
+
+        player.setGravity(0,300);
+
+        player2.setImmovable(true);
+
+        this.physics.add.collider(player, player2);
+
+
+
+
+
+console.log("dfin crea")
+
+
+
+
+
+
+
+
+    }
+
+
+function update() {
+ //   console.log("debut update")
+
+
+     if (haut.isDown)
+    {
+        player2.setVelocityY(-300);
+    }
+    else if (bas.isDown)
+    {
+        player2.setVelocityY(300);
+    }
+
+    else if (gauche.isDown)
+    {
+        player2.setVelocityX(300);
+    }
+    else if (droite.isDown)
+    {
+        player2.setVelocityX(-300);
+    }
+    else{
+        player2.setVelocityX(0);
+        player2.setVelocityY(0);
+
+    }
+
+
+     if (space.isDown)
+    {
+        player.setVelocityY(-300);
+    }
+
+
+     if (droite.isDown)
+    {
+        player.setVelocityX(150);
+    }
+
+
+
+//console.log("dfin update")
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
