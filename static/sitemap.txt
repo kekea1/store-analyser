@@ -1,24 +1,24 @@
-https://learnrussian.pythonanywhere.com/
-https://learnrussian.pythonanywhere.com/precis/
-https://learnrussian.pythonanywhere.com/general/
-https://learnrussian.pythonanywhere.com/precis/education sovietique
-https://learnrussian.pythonanywhere.com/precis/l'espace russe
-https://learnrussian.pythonanywhere.com/precis/les peuples de Russie
-https://learnrussian.pythonanywhere.com/precis/l'uniforme (debat)
-https://learnrussian.pythonanywhere.com/precis/le monde communiste
-https://learnrussian.pythonanywhere.com/precis/la seconde guerre mondiale
-https://learnrussian.pythonanywhere.com/precis/la conquete spatiale
-https://learnrussian.pythonanywhere.com/precis/l'art et le pouvoir
-https://learnrussian.pythonanywhere.com/precis/la description de Moscou
-https://learnrussian.pythonanywhere.com/general/les jours de la semaine
-https://learnrussian.pythonanywhere.com/general/les pronoms interrogatifs
-https://learnrussian.pythonanywhere.com/general/les verbes (conjugues)
-https://learnrussian.pythonanywhere.com/general/les nombres
-https://learnrussian.pythonanywhere.com/general/expressions generales
-https://learnrussian.pythonanywhere.com/general/la description d'une ville (1)
-https://learnrussian.pythonanywhere.com/general/mots pour enrichir ses phrases
-https://learnrussian.pythonanywhere.com/general/les adjectifs
-https://learnrussian.pythonanywhere.com/general/la famille
-https://learnrussian.pythonanywhere.com/general/la nourriture 
-https://learnrussian.pythonanywhere.com/general/la maison
-https://learnrussian.pythonanywhere.com/general/la description d'une ville (2)
+https://learnrussian.herokuapp.com/
+https://learnrussian.herokuapp.com/precis/
+https://learnrussian.herokuapp.com/general/
+https://learnrussian.herokuapp.com/precis/education sovietique
+https://learnrussian.herokuapp.com/precis/l'espace russe
+https://learnrussian.herokuapp.com/precis/les peuples de Russie
+https://learnrussian.herokuapp.com/precis/l'uniforme (debat)
+https://learnrussian.herokuapp.com/precis/le monde communiste
+https://learnrussian.herokuapp.com/precis/la seconde guerre mondiale
+https://learnrussian.herokuapp.com/precis/la conquete spatiale
+https://learnrussian.herokuapp.com/precis/l'art et le pouvoir
+https://learnrussian.herokuapp.com/precis/la description de Moscou
+https://learnrussian.herokuapp.com/general/les jours de la semaine
+https://learnrussian.herokuapp.com/general/les pronoms interrogatifs
+https://learnrussian.herokuapp.com/general/les verbes (conjugues)
+https://learnrussian.herokuapp.com/general/les nombres
+https://learnrussian.herokuapp.com/general/expressions generales
+https://learnrussian.herokuapp.com/general/la description d'une ville (1)
+https://learnrussian.herokuapp.com/general/mots pour enrichir ses phrases
+https://learnrussian.herokuapp.com/general/les adjectifs
+https://learnrussian.herokuapp.com/general/la famille
+https://learnrussian.herokuapp.com/general/la nourriture 
+https://learnrussian.herokuapp.com/general/la maison
+https://learnrussian.herokuapp.com/general/la description d'une ville (2)
