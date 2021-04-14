@@ -18,7 +18,7 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
-    /^https:\/\/learnrussian\.herokuapp\.com\//,
+    /^https:\/\/apprendrelerusse\.herokuapp\.com\//,
     workbox.strategies.staleWhileRevalidate({
       cacheName: 'static-resourceshtml',
     }),
