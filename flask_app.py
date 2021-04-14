@@ -34,14 +34,7 @@ def accueil():
     return render_template("home.html")
 
 
-@app.route('/page2')
-def page2():
-    ajout_compteur()
-    matiere = ["allemand", "anglais", "russe"]
-    #return render_template("/plus/testplus.html")
 
-
-    return render_template('page-2.html')
 
 ######### MES JEUX ########
 
@@ -119,11 +112,7 @@ def control_frame_glob(nom):
 
 ####COMPTEUR DE VISITEUR####
 
-@app.route('/compteur')
-def main2():
 
-    donnee=lire()
-    return donnee
 
 ############################
 
@@ -139,8 +128,5 @@ def ma_page_404(error):
     return "Ma jolie page 404", 404
 
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
 
