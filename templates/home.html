@@ -1,126 +1,35 @@
-<html><head>
-        <meta charset="utf-8">
-        {% include 'statics.html' %}
-{% include "workers.html" %}
+{% extends "squelette.html"  %}
 
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% block header_perso %}
 
-    <title>Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces</title>
+    <title>Learnrussian - Apprendre facilement le russe en ligne grâce à des exercices de vocabulaire gratuits </title>
 
-<meta name="description" content="Conçu par et pour des élèves, les exercices de Trainerbac vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
-C'est une solution totalement gratuite visant l'assimilation des fondamentaux en Latin, Anglais, Allemand et Russe. Basé sur Quizlet.">
-<meta name="generator" content="Grapedrop">
+<meta name="description" content="Apprendre facilement le russe en ligne grâce à des exercices de vocabulaire gratuits
+Apprendre du vocabulaire russe de niveau débutant à avancé avec les listes de Learnrussian. Basé sur Quizlet.">
 
-<!-- Apple Stuff -->
-    <link rel="apple-touch-icon" href="https://grapedrop.com/favicon.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces">
+{% include "only_for_index.html" %}
 
-<!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces">
-<meta itemprop="description" content="Conçu par et pour des élèves, les exercices de Trainerbac vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
-C'est une solution totalement gratuite visant l'assimilation des fondamentaux en Latin, Anglais, Allemand et Russe. Basé sur Quizlet.">
-<meta itemprop="image" content="">
-
-<!-- MS Tile - for Microsoft apps-->
-<meta name="msapplication-TileImage" content="">
-
-<!-- Facebook Meta Tags -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces">
-<meta property="og:description" content="Conçu par et pour des élèves, les exercices de Trainerbac vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
-C'est une solution totalement gratuite visant l'assimilation des fondamentaux en Latin, Anglais, Allemand et Russe. Basé sur Quizlet.">
-<meta property="og:image" content="">
-<meta property="og:url" content="https://trainerbac.pythonanywhere.com">
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces">
-<meta name="twitter:description" content="Conçu par et pour des élèves, les exercices de Trainerbac vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
-C'est une solution totalement gratuite visant l'assimilation des fondamentaux en Latin, Anglais, Allemand et Russe. Basé sur Quizlet.">
-<meta name="twitter:image" content="">
-
-
-
-<script type="application/ld+json">
-    {
-        "@context":"https://schema.org",
-        "@type":"WebPage",
-        "url":"https://trainerbac.pythonanywhere.com",
-        "description":"Conçu par et pour des élèves, les exercices de Trainerbac vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
-C&#039;est une solution totalement gratuite visant l&#039;assimilation des fondamentaux en Latin, Anglais, Allemand et Russe. Basé sur Quizlet.",
-        "name":"Trainerbac - Listes et exercices de vocabulaire et de révision gratuits, utiles et efficaces",
-        "image":""
-    }
-</script>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://grapedrop.com/css/gjs-base.css?id=a37b7675ca242b36b057">
-
-
-<script>
-    window._formUrl = "https://grapedrop.com/form-collector/bc46a070019543ca9865b8744048d47c";
-    window.__gRecapKey = "";
-    window.postJQCnt = [];
-    window.postJQ = function() {
-        window._jqloaded = 1;
-        postJQCnt.forEach(function(fn) { fn && fn() })
-    }
-</script>
-<script async="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" onload="postJQ()"></script>
-
-    <script async="" src="https://grapedrop.com/js/gpd.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.0/lory.min.js"></script>
-<style>
-    body { margin: 0; padding: 0; overflow-x: hidden; }
-</style>
-<style data-css-anim="">
-    [data-anim-type]:not([data-anim-done]) { opacity: 0; }
-</style>
-
-
-        <style>
-            * { box-sizing: border-box; } body {margin: 0;}#il2gu{font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:200;padding:50px 0;color:#eee;display:flex;align-items:center;text-align:center;background-image:url(https://cdn.grapedrop.com/uc419ecefdfc84a1fb7a6d0a39e4c00e8/311bedf5bed541fd9e744322279f506b_literature-3033196_640.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:local;background-size:cover;width:100%;height:700px;max-width:100%;}#ip1s7{padding:25px 0;}#ic7rz{white-space:initial;}#i2pv2{font-size:3.5rem;color:#12e26f;text-align:center;font-family:Trebuchet MS, Helvetica, sans-serif;line-height:85px;max-width:100%;}#ihkif{line-height:3.5rem;margin-bottom:50px;margin:30px 0 50px 0;font-family:Trebuchet MS, Helvetica, sans-serif;letter-spacing:2px;font-size:20px;font-weight:500;color:#14c965;}#ik98i{display:inline-block;padding:15px 30px;margin:5px 10px;text-decoration:none;text-align:center;opacity:1;transition:color 0.25s, opacity 0.25s;border-radius:3px;color:white;border:2px solid transparent;background-color:rgba(16,223,139,0.91);font-weight:300;}#icawi{display:inline-block;padding:15px 30px;margin:5px 10px;text-decoration:none;text-align:center;opacity:1;transition:color 0.25s, opacity 0.25s;border-radius:3px;color:white;border:2px solid transparent;background-color:rgba(16,223,139,0.91);font-weight:300;}#izzzj{display:inline-block;padding:15px 30px;margin:5px 10px;text-decoration:none;text-align:center;opacity:1;transition:color 0.25s, opacity 0.25s;border-radius:3px;color:white;border:2px solid transparent;background-color:rgba(16,223,139,0.91);font-weight:300;}#i90jt{display:inline-block;padding:15px 30px;margin:5px 10px;text-decoration:none;text-align:center;opacity:1;transition:color 0.25s, opacity 0.25s;border-radius:3px;color:white;border:2px solid transparent;background-color:rgba(16,223,139,0.91);font-weight:300;}body{text-align:center;}
-        </style>
-    </head>
-    <body>
-        {% include 'head.html' %}
-
-        <section id="il2gu" class="container"><div id="ip1s7" class="container"><div data-columns="1" id="ic7rz" class="row no-gutters">
-            <div data-column="1" id="i8f63" class="cell"><h1 id="i2pv2">Trainerbac</h1>
-            <div id="ihkif">Conçu par et pour des étudiants, Trainerbac booste tes révisions [basé sur <a href="https://quizlet.com">Quizlet</a>]</div>
-            <a href="https://trainerbac.pythonanywhere.com/latin/" id="ik98i">
-        Latin</a><a href="" id="i90jt">Allemand</a>
-        <a href="##" id="izzzj">Russe</a><a href="##" id="icawi">Anglais</a></div></div></div></section>
-
-        <style>
-    a.page-brand-badge {
-        border-radius: 3px !important;
-        background-color: white !important;
-        box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
-        padding: 5px 7px !important;
-        font-family: Helvetica, sans-serif !important;
-        font-size: 12px !important;
-        text-decoration: none !important;
-        color: #555 !important;
-        transition: box-shadow 0.25s !important;
-    }
-    a.page-brand-badge:hover {
-        box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.1);
-    }
-
-</style>
-
-
-    <script async="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
-    <script>function loadQl() {quicklink({ ignores:[ /^tel:/g, /^mailto:/g] })}</script>
-    <script async="" src="https://unpkg.com/quicklink@1.0.1" onload="loadQl()"></script>
+{% endblock %}
 
 
 
 
-</body></html>
+
+
+{% block corps %}
+
+
+    <div class=" container-fluid align-items-center text-center w-100 h-100" style=' margin-top:17%'>
+        <br><br>
+    <h1>Learnrussian</h1>
+    <br>
+    <h4 class="lead lh-lg">Apprendre facilement le russe en ligne grâce à des exercices de vocabulaire gratuits. Basé sur <a href="https://www.quizlet.com">Quizlet</a> </h4>
+    <br><br>
+     <a href="/general/" class="btn btn-lg btn-success lead border-white bg-blue me-2 mb-1" role="button"> Vocacuabulaire général </a>
+      <a href="/precis/" class="btn btn-lg btn-dark lead border-white bg-blue me-2" role="button"> Vocabulaire précis </a>
+
+  </div>
+
+{% endblock %}
+
+

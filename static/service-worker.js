@@ -18,7 +18,7 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
-    /^https:\/\/trainerbac\.pythonanywhere\.com\//,
+    /^https:\/\/learnrussian\.pythonanywhere\.com\//,
     workbox.strategies.staleWhileRevalidate({
       cacheName: 'static-resourceshtml',
     }),

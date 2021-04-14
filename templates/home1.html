@@ -1,0 +1,32 @@
+{% extends "squelette.html"  %}
+<html>
+    <head>
+<link href='{{url_for("static",filename="css/index-style.css")}}' rel="stylesheet"></link>
+    <title>Learnrussian - Listes et exercices de vocabulaire russe gratuits et efficaces</title>
+
+<meta name="description" content="Conçu par et pour des élèves, les exercices de Learnrussian vont te permettre de booster ton vocabulaire et tes révisions de façon simple et efficace.
+C'est une solution totalement gratuite visant l'assimilation des fondamentaux en russe. Basé sur Quizlet.">
+
+    </head>
+
+
+<body class=" bg-image" style='background: url({{url_for("static",filename="images/fond_ecran.jpg")}});' >
+
+{% block corps %}
+
+    <div class=" container align-items-center text-center w-100 h-100" style=' margin-top:20%'>
+    <h1>Learnrussian</h1>
+    <br>
+    <h4 class="lead">Des dizaines de listes de vocanbulaire pour apprendre le russe. Basé sur <a href="https://www.quizlet.com">Quizlet</a> </h4>
+    <br><br>
+     <a href="/global/" class="btn btn-lg btn-success lead border-white bg-blue me-2" role="button"> Vocacuabulaire global </a>
+      <a href="/specific/" class="btn btn-lg btn-dark lead border-white bg-blue me-2" role="button"> Vocabulaire spécifique </a>
+
+  </div>
+
+{% endblock %}
+
+
+</body>
+
+</html>

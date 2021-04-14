@@ -1,0 +1,40 @@
+
+{% extends "squelette.html" %}
+
+
+{% block header_perso %}
+
+        <title>Exercices de russe sur du {{categorie}} </title>
+        <meta name="description" content="Exercices de russe sur du {{categorie}}
+Apprendre facilement le russe en ligne grâce à des exercices gratuits de vocabulaire. Basé sur Quizlet">
+
+{% endblock %}
+
+<!-- LE BLOC INFO HEADER REMPLACE TOUT LE BLABLA -->
+
+
+
+
+
+
+
+
+
+    	{% block corps %}
+
+
+
+
+<div class="container p-5 mt-5">
+	<h3>Exercices de russe sur du {{categorie}}</h3>
+	<br>
+    	 <ul class="list-group">
+    	 	{%for nom,lien in liste_nom_lien%}
+    	 	<li class="list-group-item"><a href= "/{{varlien}}/{{nom}}" > <p class="lead">{{nom}}</p> </a> </li>
+    	 	{%endfor%}
+
+    	 </ul>
+</div>
+
+
+{% endblock %}

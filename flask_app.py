@@ -3,61 +3,33 @@
 
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
-from donneecours import*
-
+from donneecours import* #DONC DE LA VARIABLE DICTIONNAIRE
+import os
+chem=os.getcwd()
 from flask import Flask,render_template,send_from_directory,request
 app = Flask(__name__,static_folder='static')
 
-#with open("data.txt","w") as f:
-#    f.write("0")
-######FONCTIONS GLOBALES ######
-
-@app.template_global()
-def lire():
-    with open("data.txt","r") as fich:
-        donnee_fich=fich.read()
-    return donnee_fich
 
 
-@app.template_global()
-def ajout_compteur():
-    donnee_fich=lire()
-  #  print(donnee_fich+"/n")
-
-    with open("data.txt","w") as fich:
-        donnee_fich=int(donnee_fich)
-        donnee_fich+=1
-
-        fich.write(str(donnee_fich))
-
-################################
-
-
-
-for val in elements:
-	for minival in val:
-		for unite in minival:
-			print(unite)
-
-@app.route('/service-worker.js')
+@app.route('/service-worker.js')  # UTILISATION DU SERVICE WORKER
 def service_worker():
 
     return app.send_static_file('service-worker.js')
 
-@app.route('/manifesta.json')
+@app.route('/manifesta.json')     #MANIFESTE DE L APPLICATION
 def manifest():
     return app.send_static_file('manifesta.json')
 
 @app.route('/robots.txt')
-@app.route('/sitemap.xml')
+@app.route('/sitemap.txt')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
 
 
-@app.route('/')
+@app.route('/')   #AFFICHAGE DU HOME
 def accueil():
-    ajout_compteur()
+   # ajout_compteur()
     matiere = ["allemand", "anglais", "russe"]
     return render_template("home.html")
 
@@ -95,36 +67,54 @@ def track():
 #####################################
 
 
-@app.route("/<lamatiere>/<unite>/souspartie/<numsp>")
-def souspartieAng(lamatiere,unite,numsp):
-	return render_template("/"+lamatiere+"/"+unite+"/souspartie/"+numsp+".html")
 
 
-@app.route("/<matiere>/<unite>/")
-def control_index(matiere,unite):
-	eval("from templates."+matiere+"."+unite+" import *")
+####### SYSTEME DE COURS RUSSE ######
 
-	return render_template("template_index_unite.html",parties=parties,nomsparties=nomsparties)
+from conversion import *
+liste_precis=liste_precis
+liste_global=liste_global
+print(liste_precis)
 
+@app.route("/precis/")
+def control_index_spe():
+	liste_nom_lien=[]
+	for liste in liste_precis:
+		liste_nom_lien.append((liste[0],liste[1]))
 
-####### SYSTEME DE COURS LATIN ######
-from donnee_frame import*
+	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="precis",categorie="vocabulaire précis")
 
+@app.route("/general/")
+def control_index_glob():
+	liste_nom_lien=[]
+	for liste in liste_global:
+		liste_nom_lien.append((liste[0],liste[1]))
 
-@app.route('/latin/declinaisons/<sujet>')
-def accueilpyd(sujet):
+	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="general",categorie="vocabulaire général")
 
-    ajout_compteur()
+@app.route("/precis/<nom>") #NOUVEAUTE
+def control_frame_spe(nom):
+	dict_nom_lien={}
+	for liste in liste_precis:
+	   # print(liste)
+	    nom1=liste[0]
+	    lien1=liste[1]
+	    dict_nom_lien[nom1]=lien1
+	thelien=dict_nom_lien[nom]
 
-    return render_template("squelette.html",
-        leiframe=declinaisons[sujet],
-        sujet=sujet)
+	return render_template("templ_frame.html",lien=thelien,nom=nom)
 
-@app.route('/latin/')
-def acceuil_latin():
+@app.route("/general/<nom>") #NOUVEAUTE
+def control_frame_glob(nom):
+	dict_nom_lien={}
+	for liste in liste_global:
+	   # print(liste)
+	    nom1=liste[0]
+	    lien1=liste[1]
+	    dict_nom_lien[nom1]=lien1
+	thelien=dict_nom_lien[nom]
 
-    ajout_compteur()
-    return render_template("menu_latin.html")
+	return render_template("templ_frame.html",lien=thelien,nom=nom)
 
 
 ####COMPTEUR DE VISITEUR####
@@ -151,6 +141,6 @@ def ma_page_404(error):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 

@@ -1,7 +1,7 @@
 {
-    "name": "PWA Appe",
-    "short_name": "PWA Appe",
-    "description": "This is a PWA Minimum Templatee",
+    "name": "Learnrussian",
+    "short_name": "Learnrussian",
+    "description": "Listes de vocabulaire pour apprendre le russe",
     "icons": [
         {
             "src": "images/icons/icon48.png",
@@ -26,6 +26,6 @@
     "scope":"/",
     "display": "standalone",
     "orientation": "any",
-    "background_color": "#00629d",
+    "background_color": "#ffffff",
     "theme_color": "#00629d"
 }
