@@ -75,7 +75,7 @@ def control_index_spe():
 	for liste in liste_precis:
 		liste_nom_lien.append((liste[0],liste[1]))
 
-	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="precis",categorie="vocabulaire précis")
+	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="precis",categorie="avancé")
 
 @app.route("/general/")
 def control_index_glob():
@@ -83,7 +83,7 @@ def control_index_glob():
 	for liste in liste_global:
 		liste_nom_lien.append((liste[0],liste[1]))
 
-	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="general",categorie="vocabulaire général")
+	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="general",categorie="débutant")
 
 @app.route("/precis/<nom>") #NOUVEAUTE
 def control_frame_spe(nom):
