@@ -21,7 +21,7 @@ def manifest():
     return app.send_static_file('manifesta.json')
 
 @app.route('/robots.txt')
-@app.route('/sitemap.txt')
+@app.route('/sitemap1.txt')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
