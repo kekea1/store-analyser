@@ -4,9 +4,8 @@
 
 
          {% block header_perso %}
-<title>  Exercice de russe gratuit sur le sujet: {{nom}} </title>
-<meta name="description" content="Exercice de russe gratuit sur le sujet: {{ nom }}.
-Apprendre facilement le russe en ligne grâce à des exercices gratuits. Basé sur Quizlet."/>
+<title>  Sujet: {{nom}} </title>
+<meta name="description" content="Exercice de russe gratuit sur le sujet: {{ nom }} pour apprendre le russe en ligne. Basé sur Quizlet."/>
 
     {% endblock %}
 
@@ -17,13 +16,13 @@ Apprendre facilement le russe en ligne grâce à des exercices gratuits. Basé s
 
 
         {% block corps %}
-    <div class="container p-5 mt-5">
-        <h3>Exercice de russe gratuit sur le sujet: {{nom}} </h3>
+    <main class="container-fluid p-5 mt-5">
+        <h1 class="ls-3">Sujet: {{nom}} </h1>
         <br> <br>
 <div class="embed-responsive" >
         <iframe class="embed-responsive-item " src="{{lien}}" height="500" width="100%" style="border:0"></iframe>
 </div>
-    </div>
+    </main>
  <br>
         {% endblock %}
 
