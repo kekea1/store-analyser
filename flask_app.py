@@ -103,7 +103,7 @@ def control_frame_spe(nom):
 	    dict_nom_lien[nom1]=lien1
 	thelien=dict_nom_lien[nom.replace("-"," ")]
 
-	return render_template("templ_frame.html",lien=thelien,nom=nom)
+	return render_template("templ_frame.html",lien=thelien,nom=nom.replace("-"," "))
 
 @app.route("/general/<nom>") #NOUVEAUTE
 def control_frame_glob(nom):
@@ -116,7 +116,7 @@ def control_frame_glob(nom):
 	    dict_nom_lien[nom1]=lien1
 	thelien=dict_nom_lien[nom.replace("-"," ")]
 
-	return render_template("templ_frame.html",lien=thelien,nom=nom)
+	return render_template("templ_frame.html",lien=thelien,nom=nom.replace("-"," "))
 
 
 ####COMPTEUR DE VISITEUR####
