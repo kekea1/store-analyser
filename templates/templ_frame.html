@@ -4,8 +4,8 @@
 
 
          {% block header_perso %}
-<title>  Sujet: {{nom.replace(" ","-")}} </title>
-<meta name="description" content="Exercice de russe gratuit sur le sujet: {{ nom.replace(" ","-") }} pour apprendre le russe en ligne. Basé sur Quizlet."/>
+<title>  Sujet: {{ nom }} </title>
+<meta name="description" content="Exercice de russe gratuit sur le sujet: {{ nom }} pour apprendre le russe en ligne. Basé sur Quizlet."/>
 
     {% endblock %}
 
@@ -17,7 +17,7 @@
 
         {% block corps %}
     <main class="container-fluid p-5 mt-5">
-        <h1 class="ls-3">Sujet: {{nom.replace(" ","-")}} </h1>
+        <h1 class="ls-3">Sujet: {{ nom }} </h1>
         <br> <br>
 <div class="embed-responsive" >
         <iframe class="embed-responsive-item " src="{{lien}}" height="500" width="100%" style="border:0"></iframe>
