@@ -74,7 +74,7 @@ def control_index_spe():
 	liste_nom_lien=[]
 	for liste in liste_precis:
 		nom=liste[0]
-		nom=nom.replace(" ","-")
+	#	nom=nom.replace(" ","-")
 		lien=liste[1]
 		liste_nom_lien.append((nom,lien))
 
@@ -85,7 +85,7 @@ def control_index_glob():
 	liste_nom_lien=[]
 	for liste in liste_global:
 		nom=liste[0]
-		nom=nom.replace(" ","-")
+	#	nom=nom.replace(" ","-")
 		lien=liste[1]
 		
 		liste_nom_lien.append((nom,lien))
@@ -98,7 +98,7 @@ def control_frame_spe(nom):
 	for liste in liste_precis:
 	 
 	    nom1=liste[0]
-	    nom1=nom1.replace(" ","-")
+	 #   nom1=nom1.replace(" ","-")
 	    lien1=liste[1]
 	    dict_nom_lien[nom1]=lien1
 	thelien=dict_nom_lien[nom]
@@ -110,7 +110,7 @@ def control_frame_glob(nom):
 	dict_nom_lien={}
 	for liste in liste_global:
 	    nom1=liste[0]
-	    nom1=nom1.replace(" ","-")
+	  #  nom1=nom1.replace(" ","-")
 		
 	    lien1=liste[1]
 	    dict_nom_lien[nom1]=lien1
