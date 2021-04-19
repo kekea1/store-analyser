@@ -5,8 +5,7 @@
 {% block header_perso %}
 
         <title>Exercices de russe gratuits de niveau {{categorie}} </title>
-        <meta name="description" content="Exercices de russe gratuits de niveau {{categorie}}
-Apprendre facilement le russe en ligne grâce à des exercices gratuits.">
+        <meta name="description" content="Apprenez le russe gratuitement le russe avec nos exercices de niveau {{categorie}}.">
 
 {% endblock %}
 
@@ -25,16 +24,16 @@ Apprendre facilement le russe en ligne grâce à des exercices gratuits.">
 
 
 
-<div class="container p-5 mt-5">
-	<h3>Exercices de russe gratuits de niveau {{categorie}}</h3>
+<main class="container p-5 mt-5">
+	<h1 class="fs-3">Exercices gratuits pour apprendre du russe de niveau {{categorie}}</h3>
 	<br>
     	 <ul class="list-group">
     	 	{%for nom,lien in liste_nom_lien%}
-    	 	<li class="list-group-item"><a href= "/{{varlien}}/{{nom}}" > <p class="lead">{{nom}}</p> </a> </li>
+    	 	<li class="list-group-item"><a href= "/{{varlien}}/{{nom}}" > <h2 class="fs-4 lead">{{nom}}</h2> </a> </li>
     	 	{%endfor%}
 
     	 </ul>
-</div>
+</main>
 
 
 {% endblock %}
