@@ -1,148 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/education%20sovietique</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/l'espace%20russe</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/les%20peuples%20de%20Russie</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/l'uniforme%20(debat)</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/le%20monde%20communiste</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/la%20seconde%20guerre%20mondiale</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/la%20conquete%20spatiale</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/l'art%20et%20le%20pouvoir</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/precis/la%20description%20de%20Moscou</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/les%20jours%20de%20la%20semaine</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/les%20pronoms%20interrogatifs</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/les%20verbes%20(conjugues)</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/les%20nombres</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/expressions%20generales</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/la%20description%20d'une%20ville%20(1)</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/mots%20pour%20enrichir%20ses%20phrases</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/les%20adjectifs</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/la%20famille</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/la%20nourriture</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/la%20maison</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apprendrelerusse.herokuapp.com/general/la%20description%20d'une%20ville%20(2)</loc>
-    <lastmod>2021-04-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+Created with Free Online Sitemap Generator www.countingcharacters.com/xml-sitemap-generator
+-->
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-de-l'education-sovietique</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/decrire-une-ville-en-russe(1)</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-de-l'espace-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-des-peuples-de-Russie</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/debattre-sur-l'uniforme-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-du-monde-communiste-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-de-la-seconde-guerre-mondiale-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-de-la-conquete-spatiale-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/parler-de-l'art-et-du-pouvoir-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/precis/decrire-Moscou-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/apprendre-les-jours-de-la-semaine-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/apprendre-les-pronoms-interrogatifs-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/verbes-utiles-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/apprendre-les-nombres-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/quelques-expressions-utiles-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/vocabulaire-pour-enrichir-ses-phrases</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/adjectifs-utiles-en-russe--</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/parler-de-sa-famille-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/parler-de-nourriture-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/parler-de-sa-maison-en-russe</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://apprendrelerusse.herokuapp.com/general/decrire-une-ville-en-russe(2)</loc>
+      <lastmod>2021-04-19</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1</priority>
+</url>
 </urlset>
