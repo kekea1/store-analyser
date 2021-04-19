@@ -73,7 +73,10 @@ print(liste_precis)
 def control_index_spe():
 	liste_nom_lien=[]
 	for liste in liste_precis:
-		liste_nom_lien.append((liste[0],liste[1]))
+		nom=liste[0]
+		nom=nom.replace(" ","-")
+		lien=liste[1]
+		liste_nom_lien.append((nom,lien))
 
 	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="precis",categorie="avancé")
 
@@ -81,7 +84,11 @@ def control_index_spe():
 def control_index_glob():
 	liste_nom_lien=[]
 	for liste in liste_global:
-		liste_nom_lien.append((liste[0],liste[1]))
+		nom=liste[0]
+		nom=nom.replace(" ","-")
+		lien=liste[1]
+		
+		liste_nom_lien.append((nom,lien))
 
 	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="general",categorie="débutant")
 
