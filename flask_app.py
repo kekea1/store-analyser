@@ -98,10 +98,10 @@ def control_frame_spe(nom):
 	for liste in liste_precis:
 	 
 	    nom1=liste[0]
-	    nom1=nom1.replace(" ","-")
+	 #   nom1=nom1.replace(" ","-")
 	    lien1=liste[1]
 	    dict_nom_lien[nom1]=lien1
-	thelien=dict_nom_lien[nom]
+	thelien=dict_nom_lien[nom.replace("-"," ")]
 
 	return render_template("templ_frame.html",lien=thelien,nom=nom)
 
@@ -110,11 +110,11 @@ def control_frame_glob(nom):
 	dict_nom_lien={}
 	for liste in liste_global:
 	    nom1=liste[0]
-	    nom1=nom1.replace(" ","-")
+	  #  nom1=nom1.replace(" ","-")
 		
 	    lien1=liste[1]
 	    dict_nom_lien[nom1]=lien1
-	thelien=dict_nom_lien[nom]
+	thelien=dict_nom_lien[nom.replace("-"," ")]
 
 	return render_template("templ_frame.html",lien=thelien,nom=nom)
 
