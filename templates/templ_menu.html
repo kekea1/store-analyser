@@ -30,7 +30,7 @@
 	<br>
     	 <ul class="list-group">
     	 	{%for nom,lien in liste_nom_lien%}
-    	 	<li class="list-group-item"><a href= "/{{varlien}}/{{nom}}" > <h2 class="fs-4 lead">{{nom}}</h2> </a> </li>
+    	 	<li class="list-group-item"><a href= "/{{varlien}}/{{nom.replace(" ","-")}}" > <h2 class="fs-4 lead">{{nom}}</h2> </a> </li>
     	 	{%endfor%}
 
     	 </ul>
