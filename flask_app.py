@@ -52,7 +52,7 @@ def hello_world():
     quantile75=dico_base["installs"].quantile(.75)
     html=dico_base.to_html()
 
-    with open("/home/runner/testsite/templates/index.html"
+    with open("templates/index.html"
 , "w") as text_file:
         text_file.write("entree "+entree+"\n")
         text_file.write(html+"\n")
