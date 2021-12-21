@@ -7,6 +7,7 @@ import pandas as pd
 import play_scraper as ps
 
 from flask import Flask,render_template,request
+import time
 
 app = Flask(__name__)
 
@@ -61,6 +62,10 @@ def hello_world():
         text_file.write("quantile25: "+str(quantile25)+"\n")
         text_file.write("quantile50: "+str(quantile50)+"\n")
         text_file.write("quantile75: "+str(quantile75)+"\n")
+    
+    time.sleep(2)
+    
+    
         
 
     return render_template("index.html")
