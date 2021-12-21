@@ -69,11 +69,6 @@ def hello_world():
 def home():
     return render_template("home.html")
 
-host="0.0.0.0"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=8081,debug=True)
-
 
 
 ####COMPTEUR DE VISITEUR####
