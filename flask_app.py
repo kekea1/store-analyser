@@ -30,6 +30,7 @@ def rm2(text):
 def hello_world():
     nbpage=request.args.get("page");nbpage=int(nbpage)
     entree=request.args["text"]
+    print("AZERRTTYYUIIIHBUYGYU COOOOOOOOOLLLLLLLL")
     recherche=[]
     for nb in range(0,nbpage):
       recherche += ps.search(entree,detailed=True, page=nb)
