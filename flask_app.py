@@ -3,120 +3,77 @@
 
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
-from donneecours import* #DONC DE LA VARIABLE DICTIONNAIRE
-import os
-chem=os.getcwd()
-from flask import Flask,render_template,send_from_directory,request
-app = Flask(__name__,static_folder='static')
+import pandas as pd
+import play_scraper as ps
+
+from flask import Flask,render_template,request
+
+app = Flask(__name__)
 
 
 
-@app.route('/service-worker.js')  # UTILISATION DU SERVICE WORKER
-def service_worker():
-
-    return app.send_static_file('service-worker.js')
-
-@app.route('/manifesta.json')     #MANIFESTE DE L APPLICATION
-def manifest():
-    return app.send_static_file('manifesta.json')
-
-@app.route('/robots.txt')
-@app.route('/sitemap.xml')
-def static_from_root():
-    return send_from_directory(app.static_folder, request.path[1:])
+#MOYENNE PRIX OCR
+def rm1(text):
+  texte=text.replace("+","")
+  texte=texte.replace(",","")
+  valeur=int(texte)
+  return valeur
+def rm2(text):
+  texte=text.replace("$","")
+  valeur=float(texte)
+  return valeur
 
 
 
-@app.route('/')   #AFFICHAGE DU HOME
-def accueil():
-   # ajout_compteur()
-    matiere = ["allemand", "anglais", "russe"]
+@app.route('/resultat',methods=["GET"])
+def hello_world():
+    nbpage=request.args.get("page");nbpage=int(nbpage)
+    entree=request.args["text"]
+    recherche=[]
+    for nb in range(0,nbpage):
+      recherche += ps.search(entree,detailed=True, page=nb)
+    
+   #     recherche=info+recherche
+
+
+    dico_base=pd.DataFrame()
+
+    for dico_app in recherche:
+        #dico=ps.details(dico_app["app_id"])
+        dico={"title":dico_app["title"], "installs":rm1(dico_app["installs"] ),"price":rm2(dico_app["price"]) }
+        dico_base=dico_base.append(dico,ignore_index=True)
+   # print(dico_base);print(dico_base.columns)
+
+    
+    moy2=dico_base["price"].mean()
+    moy1=dico_base["installs"].mean()
+    quantile25=dico_base["installs"].quantile(.25)
+    quantile50=dico_base["installs"].quantile(.50)
+    quantile75=dico_base["installs"].quantile(.75)
+    html=dico_base.to_html()
+
+    with open("/home/runner/testsite/templates/index.html"
+, "w") as text_file:
+        text_file.write("entree "+entree+"\n")
+        text_file.write(html+"\n")
+        text_file.write("moyenne_install: "+str(moy1)+"\n")
+        text_file.write("moyenne_price: "+str(moy2)+"\n")
+        text_file.write("quantile25: "+str(quantile25)+"\n")
+        text_file.write("quantile50: "+str(quantile50)+"\n")
+        text_file.write("quantile75: "+str(quantile75)+"\n")
+        
+
+    return render_template("index.html")
+
+@app.route('/')
+def home():
     return render_template("home.html")
 
+host="0.0.0.0"
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0",port=8081,debug=True)
 
-
-######### MES JEUX ########
-
-@app.route('/jeu')
-def jeu():
-    ajout_compteur()
-    matiere = ["allemand", "anglais", "russe"]
-    return render_template("fichier3.html")
-
-@app.route('/jeuAR')
-def jeuAR():
-    ajout_compteur()
-  #  matiere = ["allemand", "anglais", "russe"]
-    return render_template("jeuAR.html")
-
-@app.route('/track')
-def track():
-    return render_template("ar_tracker.html")
-
-
-    #return render_template('page-2.html')
-
-#####################################
-
-
-
-
-####### SYSTEME DE COURS RUSSE ######
-
-from conversion import *
-liste_precis=liste_precis
-liste_global=liste_global
-print(liste_precis)
-
-@app.route("/precis/")
-def control_index_spe():
-	liste_nom_lien=[]
-	for liste in liste_precis:
-		nom=liste[0]
-	#	nom=nom.replace(" ","-")
-		lien=liste[1]
-		liste_nom_lien.append((nom,lien))
-
-	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="precis",categorie="avancé")
-
-@app.route("/general/")
-def control_index_glob():
-	liste_nom_lien=[]
-	for liste in liste_global:
-		nom=liste[0]
-	#	nom=nom.replace(" ","-")
-		lien=liste[1]
-		
-		liste_nom_lien.append((nom,lien))
-
-	return render_template("templ_menu.html",liste_nom_lien=liste_nom_lien,varlien="general",categorie="débutant")
-
-@app.route("/precis/<nom>") #NOUVEAUTE
-def control_frame_spe(nom):
-	dict_nom_lien={}
-	for liste in liste_precis:
-	 
-	    nom1=liste[0]
-	 #   nom1=nom1.replace(" ","-")
-	    lien1=liste[1]
-	    dict_nom_lien[nom1]=lien1
-	thelien=dict_nom_lien[nom.replace("-"," ")]
-
-	return render_template("templ_frame.html",lien=thelien,nom=nom.replace("-"," "))
-
-@app.route("/general/<nom>") #NOUVEAUTE
-def control_frame_glob(nom):
-	dict_nom_lien={}
-	for liste in liste_global:
-	    nom1=liste[0]
-	  #  nom1=nom1.replace(" ","-")
-		
-	    lien1=liste[1]
-	    dict_nom_lien[nom1]=lien1
-	thelien=dict_nom_lien[nom.replace("-"," ")]
-
-	return render_template("templ_frame.html",lien=thelien,nom=nom.replace("-"," "))
 
 
 ####COMPTEUR DE VISITEUR####
