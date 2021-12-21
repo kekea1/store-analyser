@@ -1,39 +1,28 @@
-{% extends "squelette.html"  %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Informateur d'appli</title>
+    <meta name="description" content="mon informateur d'appli">
+  </head>
+<body>
+  <form action="/resultat" method="get">
+      <div>
+    <label>Taper la recherche a evaluer</label>
+    <input type="text" name="text" id="text">
 
-{% block header_perso %}
+      </div>
+   <div>
+       <label>Nb de page</label>
+    <input type="text" name="page" id="page">
 
-    <title>Apprendrelerusse - Apprendre le russe gratuitement et en ligne  </title>
+   </div>
 
-<meta name="description" content="Vous avez envie d'apprendre le russe gratuitement et en ligne sans savoir comment. 
-Dans ce cas, cliquez et réalisez votre rêve grâce à nos cours. Basé sur Quizlet.">
+    <input type="submit"  value="envoyer">
 
-{% include "only_for_index.html" %}
-
-{% endblock %}
-
-
+    </form>
 
 
-
-
-{% block corps %}
-
-
-    <main class=" container-fluid align-items-center text-center w-100 h-100" style=' margin-top:17%'>
-        <br><br>
-        <br>
- 
-    <h1 class="fs-2 lh-base">Apprenez gratuitement le russe en ligne grâce à nos cours.</h1><br>
-     <h2 class="fs-5 lead lh-lg"> Apprenez facilement les bases du russe avec nos cours gratuits pour débutants et abordez des sujets plus poussés <br>
-         avec nos cours de niveau avancé.
-        Basé sur <a href="https://www.quizlet.com">Quizlet</a>
-    </h2>
-    <br><br>
-     <a href="/general/" class="btn btn-lg btn-success lead border-white bg-blue me-2 mb-1" role="button"> Apprendre le russe - Débutant</a>
-      <a href="/precis/" class="btn btn-lg btn-dark lead border-white bg-blue me-2" role="button">Apprendre le russe - Avancé</a>
-
-  </main>
-
-{% endblock %}
-
+</body>
+</html>
 
